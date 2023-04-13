@@ -49,7 +49,7 @@ kubeadm token create <copied token> --print-join-command
 
 # Run the project on worker node.
 docker build -t simple-server .
-kubectl run 
+kubectl apply -f deployment.yaml
 
 # * Worker
 # Get the full command above
